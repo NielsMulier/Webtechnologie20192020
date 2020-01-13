@@ -1,0 +1,866 @@
+<!-- AWP_In_Variable Name='"webdata".Melk_Doorsturen' -->
+<!-- AWP_In_Variable Name='"webdata".Wit_Doorsturen' -->
+<!-- AWP_In_Variable Name='"webdata".Fondant_Doorsturen' -->
+<!-- AWP_In_Variable Name='"webdata".Gewicht_Doos' -->
+<!-- AWP_In_Variable Name='"webdata".Gewicht_Pralines' -->
+<!-- AWP_In_Variable Name='"webdata".Gewicht_Totaal' -->
+<!-- AWP_In_Variable Name='"webdata".Gewicht_Netto' -->
+<!-- AWP_In_Variable Name='"webdata".Wit_Gevraagd' -->
+<!-- AWP_In_Variable Name='"webdata".Wit_Gewicht' -->
+<!-- AWP_In_Variable Name='"webdata".Melk_Gevraagd' -->
+<!-- AWP_In_Variable Name='"webdata".Melk_Gewicht' -->
+<!-- AWP_In_Variable Name='"webdata".Fondant_Gevraagd' -->
+<!-- AWP_In_Variable Name='"webdata".Fondant_Gewicht' -->
+<!-- AWP_In_Variable Name='"webdata".Type_Prog' -->
+<!-- AWP_In_Variable Name='"webdata".Act_Pos' -->
+<!-- AWP_In_Variable Name='"webdata".Webshop' -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script src="jquery-3.4.1.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    tab1 {
+      padding-left: 4em;
+    }
+
+    tab2 {
+      padding-left: 10em;
+    }
+
+    tab3 {
+      padding-left: 12em;
+    }
+
+    tab4 {
+      padding-left: 16em;
+    }
+
+    tab5 {
+      padding-left: 20em;
+    }
+
+    tab6 {
+      padding-left: 24em;
+    }
+
+    tab7 {
+      padding-left: 28em;
+    }
+
+    tab8 {
+      padding-left: 32em;
+    }
+
+    tab9 {
+      padding-left: 36em;
+    }
+
+    tab10 {
+      padding-left: 40em;
+    }
+
+    tab11 {
+      padding-left: 44em;
+    }
+
+    tab12 {
+      padding-left: 48em;
+    }
+
+    tab13 {
+      padding-left: 52em;
+    }
+
+    tab14 {
+      padding-left: 56em;
+    }
+
+    tab15 {
+      padding-left: 60em;
+    }
+
+    tab16 {
+      padding-left: 64em;
+    }
+
+    .dotmelk1 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(100, 58, 4);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(100, 58, 4);
+    }
+
+    .dotmelk2 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(100, 58, 4);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(100, 58, 4);
+    }
+
+    .dotmelk3 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(100, 58, 4);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(100, 58, 4);
+    }
+
+    .dotmelk4 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(100, 58, 4);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(100, 58, 4);
+    }
+
+    .dotmelk6 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(100, 58, 4);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(100, 58, 4);
+    }
+
+    .dotmelk7 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(100, 58, 4);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(100, 58, 4);
+    }
+
+    .dotmelk8 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(100, 58, 4);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(100, 58, 4);
+    }
+
+    .dotmelk9 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(100, 58, 4);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(100, 58, 4);
+    }
+
+    .dotwit1 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(247, 212, 17);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(247, 212, 17);
+    }
+    .dotwit2 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(247, 212, 17);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(247, 212, 17);
+    }
+    .dotwit3 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(247, 212, 17);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(247, 212, 17);
+    }
+    .dotwit4 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(247, 212, 17);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(247, 212, 17);
+    }
+    .dotwit6 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(247, 212, 17);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(247, 212, 17);
+    }
+    .dotwit7 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(247, 212, 17);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(247, 212, 17);
+    }
+    .dotwit8 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(247, 212, 17);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(247, 212, 17);
+    }
+    .dotwit9 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(247, 212, 17);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(247, 212, 17);
+    }
+
+    .dotfondant1 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(0, 0, 0);
+    }
+    .dotfondant2 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(0, 0, 0);
+    }
+    .dotfondant3 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(0, 0, 0);
+    }
+    .dotfondant4 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(0, 0, 0);
+    }
+    .dotfondant6 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(0, 0, 0);
+    }
+    .dotfondant7 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(0, 0, 0);
+    }
+    .dotfondant8 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(0, 0, 0);
+    }
+    .dotfondant9 {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(0, 0, 0);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(0, 0, 0);
+    }
+
+    .dotniks {
+      height: 55px;
+      width: 55px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50%;
+      display: inline-block;
+      border: 5px solid rgb(255, 255, 255);
+    }
+
+    .dotmelk:hover {
+      background-color: rgba(247, 245, 243, 0.867);
+    }
+
+    .dotmelk_active {
+      background-color: rgba(247, 245, 243, 0.867);
+    }
+
+    .dotwit:hover {
+      background-color: rgba(247, 245, 243, 0.867);
+    }
+
+    .dotfondant:hover {
+      background-color: rgba(247, 245, 243, 0.867);
+    }
+
+    .stappenplan {
+      height: 50px;
+      width: 50px;
+      background-color: rgba(185, 183, 46, 0.239);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .noodstappenplan {
+      height: 50px;
+      width: 50px;
+      background-color: rgba(168, 14, 14, 0.239);
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    body {
+      font-family: Arial;
+    }
+
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+      border: 1px solid rgb(255, 255, 255);
+      background-color: #4e2f1a;
+    }
+
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: rgb(110, 66, 24);
+    }
+
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: rgb(110, 66, 24);
+    }
+
+    /* Style the tab content */
+    .tabcontent {
+      display: grid;
+      grid-template: 150px / auto auto auto;
+      grid-gap: 5px;
+      background-color: white;
+      padding: 10px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-column-gap: 250px;
+      grid-template-columns: auto auto auto;
+      background-color: rgb(255, 255, 255);
+      padding: 10px;
+    }
+
+    .grid-item {
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .Doorsturen {
+      font-size: 20px;
+      border: none;
+      background-color: white;
+    }
+
+    .tablinks {
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h2>Robotic Monitoring Interface</h2>
+  <p>Kies welke data u wilt bezichtingen </p>
+  
+  
+  
+
+  <div class="tab">
+    <button class="tablinks" onclick="opentabs(event, 'Blisters')">Blisters</button>
+
+    <button class="tablinks" onclick="opentabs(event, 'Data Input')">Shop</button>
+    <button class="tablinks" onclick="opentabs(event, 'Data Output')">Data</button>
+  </div>
+
+  <div id="Blisters" class="tabcontent">
+    <div>
+      <h3>Blister melk</h3>
+      <p><span class="dotmelk1"></span> <span class="dotmelk4"></span> <span class="dotmelk7"></span> </p>
+      <p><span class="dotmelk2"></span> <span class="dotniks"></span> <span class="dotmelk8"></span> </p>
+      <p><span class="dotmelk3"></span> <span class="dotmelk6"></span> <span class="dotmelk9"></span> </p>
+    </div>
+
+    <div>
+      <h3>Blister Wit</h3>
+      <p><span class="dotwit1"></span> <span class="dotwit4"></span> <span class="dotwit7"></span> </p>
+      <p><span class="dotwit2"></span> <span class="dotniks"></span> <span class="dotwit8"></span> </p>
+      <p><span class="dotwit3"></span> <span class="dotwit6"></span> <span class="dotwit9"></span> </p>
+    </div>
+
+    <div>
+      <h3>Blister Fondant</h3>
+      <p><span class="dotfondant1"></span> <span class="dotfondant4"></span> <span class="dotfondant7"></span> </p>
+      <p><span class="dotfondant2"></span> <span class="dotniks"></span> <span class="dotfondant8"></span> </p>
+      <p><span class="dotfondant3"></span> <span class="dotfondant6"></span> <span class="dotfondant9"></span> </p>
+    </div>
+  </div>
+
+  <div id="Data Input" class="tabcontent" style="display: none;">
+    <div class="grid-container">
+      <div class="grid-item"><img src="lingot-melk.jpg" alt="praline melk" style="width:128px;height:128px;">
+        <p id="TextImage">Praline Melk</p>
+      </div>
+      <div class="grid-item"><img src="praline_wit.jpg" alt="praline Wit" style="width:160px;height:150px;">
+        <p id="TextImage">Praline Wit</p>
+      </div>
+      <div class="grid-item"><img src="praline_fondant.jpg" alt="praline Wit" style="width:160px;height:128px;">
+        <p id="TextImage">Praline Fondant</p>
+      </div>
+      <div class="grid-item">Aantal : <input id='melk_g' type="number" name="DoorsturenMelk" value=""><br></div>
+      <div class="grid-item">Aantal : <input id='wit_g' type="number" name="DoorsturenWit" value=""><br></div>
+      <div class="grid-item">Aantal : <input id='fondant_g' type="number" name="DoorsturenFondant" value=""><br></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"><button id='doorsturenknop' class="Doorsturen"><img src="winkelmand.png" 
+            style="width:100px;height:100px;">
+        </button><br></div>
+    </div>
+  </div>
+
+
+  <div id="Data Output" class="tabcontent" style="display: none;">
+    <table>
+      <tr>
+        <td align="left"> Gewichten: </td><td><td align="left">Pralines: </td>
+      </tr>
+
+      <tr>
+        <td align="left">Gewicht doos:</td> <td id="Gewicht_Doos"></td>  <td align="left">Gevraagd Melk:</td><td id="Melk_Gevraagd"></td>
+      </tr>
+
+      <tr>
+        <td align="left">Gewicht pralines:</td><td id="Gewicht_Pralines"></td> <td align="left">Gevraagd Wit:</td><td id="Wit_Gevraagd"></td>
+      </tr>
+
+      <tr>
+        <td align="left">Gewicht totaal:</td><td id="Gewicht_Totaal"></td> <td align="left">Gevraagd Fondant:</td><td id="Fondant_Gevraagd"></td>
+      </tr>
+
+      <tr>
+        <td align="left">Gewicht netto:</td><td id="Gewicht_Netto"></td> <td align="left">Melk doorsturen</td><td id="Melk_Doorsturen"></td>
+      </tr>
+
+      <tr>
+        <td align="left">Gewicht melk:</td><td id="Melk_Gewicht"></td> <td align="left">Wit doorsturen:</td><td id="Wit_Doorsturen"></td>
+      </tr>
+
+      <tr>
+        <td align="left">Gewicht wit:</td><td id="Wit_Gewicht"></td> <td align="left">Fondant doorsturen:</td><td id="Fondant_Doorsturen"></td>
+      </tr>
+
+      <tr>
+        <td align="left">Gewicht fondant:</td><td id="Fondant_Gewicht"></td> <td></td><td></td>
+      </tr>
+      
+      <tr>
+        <td></td><td></td> <td align="left">Nuttige info:</td><td></td>
+      </tr>
+      <tr>
+        <td></td> <td></td> <td align="left">Type programma:</td><td id="Type_Prog"></td>
+      </tr>
+
+      <tr>
+        <td></td><td></td> <td align="left">Actuele positie:</td><td id="Act_Pos"></td>
+      </tr>
+
+      <tr>
+        <td></td><td></td> <td align="left">Webshopbit:</td><td id="Webshopbit"></td>
+      </tr>
+
+      
+
+      
+
+    </table>
+    
+    
+    
+    
+    
+    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    function opentabs(evt, tablad) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(tablad).style.display = "grid";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+  <script>
+
+
+
+  </script>
+
+
+  <script type="text/javascript">
+/* Automatisch updaten alles*/
+    $(document).ready(function () {
+      //query the trianglewave variable every second
+      $.ajaxSetup({ cache: false });
+      setInterval(function () {
+        $.get("data.htm", function (result) {
+          $('#Melk_Doorsturen').text(result);
+          console.log(result);
+          var list = result.split("\n");
+          document.getElementById('Melk_Doorsturen').innerHTML = list[0];
+          document.getElementById('Wit_Doorsturen').innerHTML = list[1];
+          document.getElementById('Fondant_Doorsturen').innerHTML = list[2];
+          document.getElementById('Gewicht_Doos').innerHTML = list[3];
+          document.getElementById('Gewicht_Pralines').innerHTML = list[4];
+          document.getElementById('Gewicht_Totaal').innerHTML = list[5];
+          document.getElementById('Gewicht_Netto').innerHTML = list[6];
+          document.getElementById('Wit_Gevraagd').innerHTML = list[7];
+          document.getElementById('Wit_Gewicht').innerHTML = list[8];
+          document.getElementById('Melk_Gevraagd').innerHTML = list[9];
+          document.getElementById('Melk_Gewicht').innerHTML = list[10];
+          document.getElementById('Fondant_Gevraagd').innerHTML = list[11];
+          document.getElementById('Fondant_Gewicht').innerHTML = list[12];
+          document.getElementById('Type_Prog').innerHTML = list[13];
+          document.getElementById('Act_Pos').innerHTML = list[14];
+          document.getElementById('Webshopbit').innerHTML = list[15];
+            
+          if (list[0] >= 1) {
+            let myElement = document.querySelector(".dotmelk1");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotmelk1");
+            myElement.style.backgroundColor = "#643a04";
+          }
+
+          if (list[0] >= 2) {
+            let myElement = document.querySelector(".dotmelk2");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotmelk2");
+            myElement.style.backgroundColor = "#643a04";
+          };
+          if (list[0] >= 3) {
+            let myElement = document.querySelector(".dotmelk3");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotmelk3");
+            myElement.style.backgroundColor = "#643a04";
+          };
+          if (list[0] >= 4) {
+            let myElement = document.querySelector(".dotmelk4");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotmelk4");
+            myElement.style.backgroundColor = "#643a04";
+          };
+          if (list[0] >= 6) {
+            let myElement = document.querySelector(".dotmelk6");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotmelk6");
+            myElement.style.backgroundColor = "#643a04";
+          };
+          if (list[0] >= 7) {
+            let myElement = document.querySelector(".dotmelk7");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotmelk7");
+            myElement.style.backgroundColor = "#643a04";
+          };
+          if (list[0] >= 8) {
+            let myElement = document.querySelector(".dotmelk8");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotmelk8");
+            myElement.style.backgroundColor = "#643a04";
+          };
+          if (list[0] >= 9) {
+            let myElement = document.querySelector(".dotmelk9");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotmelk9");
+            myElement.style.backgroundColor = "#643a04";
+          };
+
+
+
+          if (list[1] >= 1) {
+            let myElement = document.querySelector(".dotwit1");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotwit1");
+            myElement.style.backgroundColor = "#f7d411";
+          };
+          if (list[1] >= 2) {
+            let myElement = document.querySelector(".dotwit2");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotwit2");
+            myElement.style.backgroundColor = "#f7d411";
+          };
+          if (list[1] >= 3) {
+            let myElement = document.querySelector(".dotwit3");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotwit3");
+            myElement.style.backgroundColor = "#f7d411";
+          };
+          if (list[1] >= 4) {
+            let myElement = document.querySelector(".dotwit4");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotwit4");
+            myElement.style.backgroundColor = "#f7d411";
+          };
+          if (list[1] >= 6) {
+            let myElement = document.querySelector(".dotwit6");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotwit6");
+            myElement.style.backgroundColor = "#f7d411";
+          };
+          if (list[1] >= 7) {
+            let myElement = document.querySelector(".dotwit7");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotwit7");
+            myElement.style.backgroundColor = "#f7d411";
+          };
+          if (list[1] >= 8) {
+            let myElement = document.querySelector(".dotwit8");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotwit8");
+            myElement.style.backgroundColor = "#f7d411";
+          };
+          if (list[1] >= 9) {
+            let myElement = document.querySelector(".dotwit9");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotwit9");
+            myElement.style.backgroundColor = "#f7d411";
+          };
+
+
+
+          if (list[2] >= 1) {
+            let myElement = document.querySelector(".dotfondant1");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotfondant1");
+            myElement.style.backgroundColor = "#000000";
+          };
+          if (list[2] >= 2) {
+            let myElement = document.querySelector(".dotfondant2");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotfondant2");
+            myElement.style.backgroundColor = "#000000";
+          };
+          if (list[2] >= 3) {
+            let myElement = document.querySelector(".dotfondant3");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotfondant3");
+            myElement.style.backgroundColor = "#000000";
+          };
+          if (list[2] >= 4) {
+            let myElement = document.querySelector(".dotfondant4");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotfondant4");
+            myElement.style.backgroundColor = "#000000";
+          };
+          if (list[2] >= 6) {
+            let myElement = document.querySelector(".dotfondant6");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotfondant6");
+            myElement.style.backgroundColor = "#000000";
+          };
+          if (list[2] >= 7) {
+            let myElement = document.querySelector(".dotfondant7");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotfondant7");
+            myElement.style.backgroundColor = "#000000";
+          };
+          if (list[2] >= 8) {
+            let myElement = document.querySelector(".dotfondant8");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotfondant8");
+            myElement.style.backgroundColor = "#000000";
+          };
+          if (list[2] >= 9) {
+            let myElement = document.querySelector(".dotfondant9");
+            myElement.style.backgroundColor = "#FFFFFF";
+          }
+          else
+          {
+            let myElement = document.querySelector(".dotfondant9");
+            myElement.style.backgroundColor = "#000000";
+          };
+        });
+      }, 200);
+
+
+
+        /* Doorsturen bit */
+      $("#doorsturenknop").click(function () {
+        url = "data.htm";
+        name = '"webdata".Webshop';
+        val = 1;
+        sdata = escape(name) + '=' + val;
+        $.post(url, sdata, function (result) { });
+      });
+      /* tot hier doorsturen bit*/
+      
+
+      $("#doorsturenknop").click(function () {
+        url = "data.htm";
+        name = '"webdata".Melk_Gevraagd';
+        val = $('input[id=melk_g]').val();
+        sdata = escape(name) + '=' + val;
+        $.post(url, sdata, function (result) { });
+      });
+
+      $("#doorsturenknop").click(function () {
+        url = "data.htm";
+        name = '"webdata".Wit_Gevraagd';
+        val = $('input[id=wit_g]').val();
+        sdata = escape(name) + '=' + val;
+        $.post(url, sdata, function (result) { });
+      });
+
+      $("#doorsturenknop").click(function () {
+        url = "data.htm";
+        name = '"webdata".Fondant_Gevraagd';
+        val = $('input[id=fondant_g]').val();
+        sdata = escape(name) + '=' + val;
+        $.post(url, sdata, function (result) { });
+      });
+
+
+
+    });
+
+
+  </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
